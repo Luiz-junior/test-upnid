@@ -10,7 +10,7 @@ const port = process.env.PORT || 3002;
 
 const client = new ApolloClient({
   /* uri: `http://localhost:${port}`, */
-  uri: 'https://12b575a9.ngrok.io'
+  uri: 'https://a00e46f3.ngrok.io'
 });
 
 function App() {
