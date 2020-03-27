@@ -14,8 +14,8 @@ Dos bônus sugeridos que foram feitos:
   - Mobile: Quando aberto no celular é exibido alguns botões para o usuário
   - Número de voltas
   - Fim de corrida: quando completar 3 voltas a corrida terminará
-  - Link público: https://master.d3sseh1smif3f5.amplifyapp.com/
+  - Link público: https://agitated-liskov-a1ca64.netlify.com/
   - Stack Upnid
   - Documentação
   
-
+Obs: No primeiro carregamento as imagens terão um delay pra carregar porém na segunda vez que entrar já carregará normalmente.
