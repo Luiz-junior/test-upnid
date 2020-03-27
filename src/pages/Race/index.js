@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { gql, } from 'apollo-boost';
+import { useHistory } from 'react-router-dom';
 
 import { BtnControl, BtnMenu } from '../../components/Form';
 import { Container, Car, Start, Pause, WinMessage } from './styles';
@@ -26,6 +27,8 @@ const UPDATE_RACING = gql`
 `;
 
 function Race(props) {
+  let history = useHistory();
+
   let { id, newPilot } = props.location.state;
   let currentID = parseInt(id) + 1;
 
@@ -67,11 +70,11 @@ function Race(props) {
 
           if (newPilot) {
             updateRacing({ variables: { id: currentID, victories: current } })
-              .then(() => { })
+              .then(() => setTimeout(() => history.push('/'), 3000))
               .catch(err => console.log('erro', err));
           } else {
             updateRacing({ variables: { id, victories: current } })
-              .then(() => { })
+              .then(() => setTimeout(() => history.push('/'), 3000))
               .catch(err => console.log('erro', err));
           }
         }
@@ -162,7 +165,7 @@ function Race(props) {
         <BtnMenu onClick={() => onPlay()}>Play</BtnMenu>
         <BtnMenu onClick={() => onTurbo()}>Turbo</BtnMenu>
         <div className="totalVictories">
-          Victories: <b>{!loading ? data.Racing.victories : 0 }</b>
+          Victories: <b>{!loading ? data.Racing.victories : 0}</b>
         </div>
       </div>
 

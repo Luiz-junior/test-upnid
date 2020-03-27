@@ -14,7 +14,7 @@ Dos bônus sugeridos que foram feitos:
   - Mobile: Quando aberto no celular é exibido alguns botões para o usuário
   - Número de voltas
   - Fim de corrida: quando completar 3 voltas a corrida terminará
-  - Link público: 
+  - Link público: https://master.d3sseh1smif3f5.amplifyapp.com/
   - Stack Upnid
   - Documentação
   
